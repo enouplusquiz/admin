@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VQUIX Creator Studio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+
+    <div class="container m-2">
+        <textarea id="edt_question" class="form-control m-2" type="text" placeholder="ENTER QUESTION HERE"></textarea>
+        <textarea id="edt_option1" class="form-control m-2" type="text" placeholder="ENTER OPTION 1 HERE"></textarea>
+        <textarea id="edt_option2" class="form-control m-2" type="text" placeholder="ENTER OPTION 2 HERE"></textarea>
+        <textarea id="edt_option3" class="form-control m-2" type="text" placeholder="ENTER OPTION 3 HERE"></textarea>
+        <textarea id="edt_option4" class="form-control m-2" type="text" placeholder="ENTER OPTION 4 HERE"></textarea>
+        <input type="number" class="form-control" placeholder="Enter Correct answer position" id="edt_correct">
+        <button class="btn btn-primary m-2" type="submit" id="btn_add" onclick="addQ()">ADD QUESTION</button>
+    
+    </div>
+
+
+    <div class="container">
+        <textarea class="form-control m-2" id="edt_output" placeholder="OUTPUT GOES HERE..."></textarea>
+        <textarea class="form-control m-2" id="edt_title" placeholder="ENTER QUIZ TITLE..." ></textarea>
+    </div>
+
+    <div class="container d-flex justify-content-between m-5">
+        <button id="btn_export" class="btn btn-success" onclick="copyit()">EXPORT</button>
+    </div>
+
+
+    <div class="container">
+        <input class="form-control m-2" type="text" id="edt_final_output">
+    </div>
+    
+
+
+
+
+        <script src="script.js"></script>
+</body>
+</html>

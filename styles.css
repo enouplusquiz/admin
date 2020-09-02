@@ -1,0 +1,36 @@
+.input-group
+{
+    display: flex;
+    align-items: center;
+}
+
+input[type=radio]
+{
+    padding: 5rem;
+}
+input[type=radio]:checked
+{
+    margin: 2rem;
+}
+
+input[type=text]
+{
+    width: 100%;
+    padding: 0.8rem 0.8rem;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text]:focus
+{
+    outline: none;
+    border: 0px solid transparent;
+    box-shadow: 0 0 4px dodgerblue;
+}
+
+.flex
+{
+    display: flex;
+}
